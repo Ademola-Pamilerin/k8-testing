@@ -1,0 +1,12 @@
+apiVersion:  v1
+kind: Pod
+metadata:
+  name: testing
+  labels:
+    component: web
+spec:
+  containers:
+   - name: frontend
+     image: ademola123/testing-html:v2
+     ports:
+      - containerPort: 80
